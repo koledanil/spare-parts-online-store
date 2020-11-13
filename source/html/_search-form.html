@@ -1,42 +1,44 @@
-<section class="search-form">
-  <h2 class="visually-hidden">Поиск по сайту</h2>
-  <!-- ! Search switcher -->
-  <ul class="search-form__list">
-    <li class="search-form__item">
-      <a class="search-form__link">Искать по</a>
-    </li>
-    <li class="search-form__item">
-      <a href="#" class="search-form__link">Vin-коду</a>
-    </li>
-    <li class="search-form__item">
-      <a href="#" class="search-form__link">марке</a>
-    </li>
-    <li class="search-form__item search-form__item--active">
-      <a href="#" class="search-form__link">названию</a>
-    </li>
-    <li class="search-form__item">
-      <a href="#" class="search-form__link">артикулу</a>
-    </li>
-  </ul>
+<section class="index-main__search-form">
+  <div class="search-form">
+    <h2 class="visually-hidden">Поиск по сайту</h2>
+    <!-- ! Search switcher -->
+    <ul class="search-form__list">
+      <li class="search-form__item">
+        <a class="search-form__link">Искать по</a>
+      </li>
+      <li class="search-form__item">
+        <a href="#" class="search-form__link">Vin-коду</a>
+      </li>
+      <li class="search-form__item">
+        <a href="#" class="search-form__link">марке</a>
+      </li>
+      <li class="search-form__item search-form__item--active">
+        <a href="#" class="search-form__link">названию</a>
+      </li>
+      <li class="search-form__item">
+        <a href="#" class="search-form__link">артикулу</a>
+      </li>
+    </ul>
 
-  <!-- ! Search field -->
-  <div class="search-field">
-    <h3 class="visually-hidden">Поиск по vin</h3>
-    <form class="search-field__form" method="POST" action="#">
-      <label class="visually-hidden" for="search-vin-input"
-        >Введите vin-код</label
-      >
-      <input
-        type="search"
-        placeholder="Введите vin код"
-        id="search-vin-input"
-        name="search-input"
-        required=""
-        class="search-field__input"
-      />
-      <button class="button" type="submit">
-        <span class="search-field__button">Искать</span>
-      </button>
-    </form>
+    <!-- ! Search field -->
+    <div class="search-field">
+      <h3 class="visually-hidden">Поиск по vin</h3>
+      <form class="search-field__form" method="POST" action="#">
+        <label class="visually-hidden" for="search-vin-input"
+          >Введите vin-код</label
+        >
+        <input
+          type="search"
+          placeholder="Введите vin код"
+          id="search-vin-input"
+          name="search-input"
+          required=""
+          class="search-field__input"
+        />
+        <button class="button" type="submit">
+          <span class="search-field__button">Искать</span>
+        </button>
+      </form>
+    </div>
   </div>
 </section>
