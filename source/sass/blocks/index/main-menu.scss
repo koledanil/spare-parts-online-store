@@ -1,0 +1,121 @@
+.nav-container {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+
+  @include flex1170;
+  flex-wrap: wrap;
+}
+
+.fav-menu {
+  list-style: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  width: 474px;
+  align-items: center;
+  &__item {
+    margin-right: 64px;
+  }
+
+  &__link {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+    text-decoration: none;
+
+    color: $grey100;
+    font-weight: bold;
+    display: block;
+    line-height: 32px;
+  }
+}
+
+.store-logo {
+  display: flex;
+  width: 223px;
+  justify-content: center;
+  align-items: center;
+  min-height: 96px;
+
+  &__img {
+    height: 56px;
+  }
+}
+
+.nav-address {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  width: 310px;
+  align-items: center;
+  line-height: 20px;
+
+  &__link {
+    text-decoration: none;
+    color: $grey100;
+  }
+}
+
+.service-menu {
+  list-style: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  width: 163px;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__item {
+    margin-left: 4px;
+  }
+
+  &__link {
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav-menu {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+  min-height: 48px;
+  align-items: center;
+  border-top: 1px solid $grey25;
+  border-bottom: 1px solid $grey25;
+
+  &__item {
+    padding-right: 12px;
+    padding-left: 12px;
+    position: relative;
+  }
+
+  &__link {
+    @include textLinkReset;
+    display: block;
+    line-height: 32px;
+  }
+
+  &__item--active {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0px;
+      bottom: -9px;
+
+      width: 100%;
+
+      height: 4px;
+      background-color: $orangeB;
+    }
+  }
+}
