@@ -1,0 +1,84 @@
+<section class="index-promo">
+  <!-- ! Slider, left side -->
+  <article class="hero-slider">
+    <ul class="hero-slider__list">
+      <li class="hero-slider__item">
+        <a href="#" class="hero-slider__link"
+          ><img
+            src="img/index/s1__carbo.jpg"
+            alt="Реклама. Запчасти на все виды автомобилей"
+            class="hero-slider__img"
+        /></a>
+
+        <button
+          class="hero-slider__button hero-slider__control-forward back-forward-btn"
+          type="button"
+          aria-label="Вперед"
+        >
+          Вперед
+        </button>
+        <button
+          class="hero-slider__button hero-slider__control-back back-forward-btn"
+          type="button"
+          aria-label="Назад"
+        >
+          Назад
+        </button>
+
+        <ul class="slide-pagination">
+          <li class="slide-pagination__item slide-pagination__item--active">
+            1
+          </li>
+          <li class="slide-pagination__item">2</li>
+          <li class="slide-pagination__item">3</li>
+          <li class="slide-pagination__item">4</li>
+          <li class="slide-pagination__item">5</li>
+        </ul>
+      </li>
+    </ul>
+  </article>
+
+  <!-- ! Promo today, right side -->
+  <article class="promo-today">
+    <div class="promo-offer">
+      <div class="promo-offer__comparison">
+        <p class="promo-offer__new-price">200</p>
+        <p class="promo-offer__old-price">500</p>
+      </div>
+
+      <figure class="promo-offer__demonstration">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="img/index/lamp@1x.webp 1x, img/index/lamp@2x.webp 2x"
+          />
+          <!-- 1х: 232px; 2x: 464px -->
+          <img
+            src="img/index/lamp@1x.jpg"
+            srcset="img/index/lamp@2x.jpg 2x"
+            width="150"
+            height="187"
+            alt="Лампа накаливания"
+          />
+        </picture>
+      </figure>
+    </div>
+
+    <div class="promo-action">
+      <b class="paromo-action__title">До конца акции осталось</b>
+      <table class="promo-action__countdown">
+        <tr class="promo-action__countdown-tr">
+          <td class="promo-action__hours-digits">00</td>
+          <td class="promo-action__mins-digits">20</td>
+          <td class="promo-action__seconds-digits">19</td>
+        </tr>
+
+        <tr class="promo-action__countdown-tr">
+          <td class="promo-action__hours-text">часов</td>
+          <td class="promo-action__mins-text">минут</td>
+          <td class="promo-action__seconds-text">чекунд</td>
+        </tr>
+      </table>
+    </div>
+  </article>
+</section>
