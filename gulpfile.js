@@ -130,7 +130,7 @@ function imgGo() {
   return src(path.source.img)
     .pipe(
       webpConvert({
-        quality: 70,
+        quality: 85,
       })
     )
     .pipe(dest(path.build.img))

@@ -8,43 +8,87 @@
               src="img/index/s1_carbo@1x.jpg"
               alt="Реклама. Запчасти на все виды автомобилей"
               class="slider__img"
-					/>
-					 <div class="slider__text-container">
-						 <b class="slider__title">Запчасти <span></br>на все виды автомобилей</span></b>
-						</div>
-					</a>
+            />
+            <div class="slider__text-container">
+              <b class="slider__title">Запчасти</b>
+              <b class="slider__subtitle"
+                >на все виды автомобилей по цене производителя</b
+              >
+            </div>
+          </a>
         </li>
       </ul>
-		 
-			<div class="slider-pagination-container">
- 						<ul class="slider-pagination">
-          <li class="slider-pagination__item slide-pagination__item--active"><a href="#" class="slider-pagination__link"></a>
-          </li>
-          <li class="slider-pagination__item"><a href="#" class="slider-pagination__link"></a></li>
-          <li class="slider-pagination__item"><a href="#" class="slider-pagination__link"></a></li>
-          <li class="slider-pagination__item"><a href="#" class="slider-pagination__link"></a></li>
-					<li class="slider-pagination__item"><a href="#" class="slider-pagination__link"></a></li>
-        </ul>
-			</div>
-			  
 
-      <!-- <button
-          class="slider__button slider__control-forward back-forward-btn"
-          type="button"
-          aria-label="Вперед"
-        >
-          Вперед
-				</button>
-				
-        <button
-          class="slider__button slider__control-back back-forward-btn"
-          type="button"
-          aria-label="Назад"
-        >
-          Назад
-        </button>
-      </li> -->
+      <ul class="slider-pagination">
+        <li class="slider-pagination__item slide-pagination__item--active">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+        <li class="slider-pagination__item">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+        <li class="slider-pagination__item">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+        <li class="slider-pagination__item">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+        <li class="slider-pagination__item">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+      </ul>
+
+      <button
+        class="slider__button slider__control-forward back-forward-btn"
+        type="button"
+        aria-label="Вперед"
+      ></button>
+      <button
+        class="slider__button slider__control-back back-forward-btn"
+        type="button"
+        aria-label=""
+      ></button>
     </div>
-    <div class="super-offer">12</div>
+    <article class="super-offer">
+      <div class="offer-comprasion">
+        <p class="offer-comprasion__new-price">200 ₽</p>
+        <b class="offer-comprasion__old-price">500 ₽</b>
+      </div>
+
+      <div class="offer-demonstration">
+        <picture class="offer-demonstration__img">
+          <source
+            type="image/webp"
+            srcset="img/index/lamp@1x.webp 1x, img/index/lamp@2x.webp 2x"
+          />
+          <!-- 1х: 232px; 2x: 464px -->
+          <img
+            src="img/index/lamp@1x.jpg"
+            srcset="img/index/lamp@2x.jpg 2x"
+            width="150"
+            height="187"
+            alt="Лампа накаливания"
+          />
+        </picture>
+        <b class="offer-demonstration__title"> Лампочка mini...</b>
+      </div>
+
+      <div class="offer-action">
+        <p class="offer-action__count-down-title">До конца акции осталось</p>
+
+        <table class="offer-action__countdown">
+          <tr class="offer-action__countdown-tr">
+            <td class="offer-action__hours-digits">00</td>
+            <td class="offer-action__mins-digits">20</td>
+            <td class="offer-action__seconds-digits">19</td>
+          </tr>
+
+          <tr class="offer-action__countdown-tr">
+            <td class="offer-action__hours-text">часов</td>
+            <td class="offer-action__mins-text">минут</td>
+            <td class="offer-action__seconds-text">чекунд</td>
+          </tr>
+        </table>
+      </div>
+    </article>
   </div>
 </section>

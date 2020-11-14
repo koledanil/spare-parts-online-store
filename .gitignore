@@ -13,3 +13,5 @@ build/
 Thumbs.db
 build
 package-lock.json
+source/.DS_Store
+source/img/.DS_Store

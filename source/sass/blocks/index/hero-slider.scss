@@ -1,3 +1,4 @@
+// ! Slider
 .top-promo-container {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
@@ -26,12 +27,6 @@
     list-style: none;
   }
 
-  &__item {
-  }
-
-  &__link {
-  }
-
   &__img {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -39,29 +34,28 @@
 
   &__text-container {
     position: absolute;
-    top: 155px;
+    width: 330px;
+    top: 100px;
     left: 100px;
   }
 
   &__title {
     color: white;
     font-size: 64px;
+    line-height: 64px;
     text-transform: uppercase;
-    line-height: 12px;
-
-    span {
-      margin: 0px 0px 0px 0px;
-      padding: 0px 0px 0px 0px;
-      font-weight: normal;
-      text-transform: none;
-      font-size: 24px;
-    }
   }
-}
 
-.super-offer {
-  width: 270px;
-  background-color: $grey25;
+  &__subtitle {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: white;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 20 px;
+    opacity: 0.64;
+    line-height: 10px;
+  }
 }
 
 .slider-pagination {
@@ -71,13 +65,15 @@
   display: flex;
 
   height: 24px;
-  background-color: rgba($grey100, 0.3);
+  background-color: rgba($grey100, $controlOpacityBg);
   border-radius: 100px;
   position: absolute;
   left: 50%;
   margin-left: -50px;
 
   bottom: 24px;
+  padding-right: 6px;
+  padding-left: 6px;
 
   &__item {
     padding-left: 4px;
@@ -91,11 +87,39 @@
       width: 8px;
       height: 8px;
       border: 1px solid white;
+      margin: 7px 0 8px;
       border-radius: 100px;
     }
   }
 }
-.slide-pagination {
-  &__item--active {
-  }
+
+.slide-pagination__item--active .slider-pagination__link::before {
+  background-color: white;
+}
+
+.slider__button {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.slider__control-back {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(-180deg);
+}
+
+.slider__control-forward {
+  top: 0px;
+  right: 0px;
+}
+// ! Slider ended
+
+// ! Goods of the day
+.super-offer {
+  width: 270px;
+  background-color: $grey25;
 }

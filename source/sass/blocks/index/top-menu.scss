@@ -118,4 +118,8 @@
       background-color: $orangeB;
     }
   }
+
+  & &__item--active {
+    font-weight: bold;
+  }
 }
