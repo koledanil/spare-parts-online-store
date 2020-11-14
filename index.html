@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gulp, gulp, done!</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="build/css/normalize.css">
+  </head>
+
+  <body class="index-body">
+		<header class="nav-menu-container">
+  <nav class="nav-container">
+    <!-- ! Favourite menu -->
+    <ul class="fav-menu">
+      <li class="fav-menu__item">
+        <a href="#" class="fav-menu__link">Магазины</a>
+      </li>
+      <li class="fav-menu__item">
+        <a href="#" class="fav-menu__link">Акции</a>
+      </li>
+      <li class="fav-menu__item">
+        <a href="#" class="fav-menu__link">Доставка и оплата</a>
+      </li>
+    </ul>
+
+    <!-- ! Logo -->
+    <div class="store-logo">
+      <a href="#" class="store-logo__link"
+        ><img
+          src="/img/global/store-logo.svg"
+          alt="Логотип интернет-магазина"
+          class="store-logo__img"
+      /></a>
+    </div>
+
+    <!-- ! Address -->
+    <div class="nav-address">
+      <a href="" class="nav-address__link"
+        >Санкт-Петербург, ул.Большая Конюшенная, д. 19</a
+      >
+    </div>
+
+    <!-- ! Service menu -->
+    <ul class="service-menu">
+      <li class="service-menu__item">
+        <a href="#" class="service-menu__link" aria-labeled="Избранное">
+          <svg width="24px" height="24px" viewBox="0 0 24 24" class="red">
+            <use xlink:href="img/iconsprite/icons.svg#_timer"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="service-menu__item">
+        <a href="#" class="service-menu__link" aria-labeled="Войти">
+          <svg width="24px" height="24px" viewBox="0 0 24 24" class="red">
+            <use xlink:href="img/iconsprite/icons.svg#_login"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="service-menu__item">
+        <a href="#" class="service-menu__link" aria-labeled="Корзина">
+          <svg width="24px" height="24px" viewBox="0 0 24 24">
+            <use xlink:href="img/iconsprite/icons.svg#_login"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <!-- ! Main links, bottom menu -->
+    <ul class="nav-menu">
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Каталог запчастей</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Каталог ТО</a>
+      </li>
+      <li class="nav-menu__item nav-menu__item--active">
+        <a href="#" class="nav-menu__link">Шины</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Диски</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Аккумуляторы</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Масла</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Лампы</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Аксессуары</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+	<main class="index-main">
+		<section class="top-promo-container">
+  <div class="promo-container">
+    <div class="slider">
+      <ul class="slider__list">
+        <li class="slider__item">
+          <a href="#" class="slider__link"
+            ><img
+              src="img/index/s1_carbo@1x.jpg"
+              alt="Реклама. Запчасти на все виды автомобилей"
+              class="slider__img"
+            />
+            <div class="slider__text-container">
+              <b class="slider__title">Запчасти</b>
+              <b class="slider__subtitle"
+                >на все виды автомобилей по цене производителя</b
+              >
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="slider-pagination">
+        <li class="slider-pagination__item slide-pagination__item--active">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+        <li class="slider-pagination__item">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+        <li class="slider-pagination__item">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+        <li class="slider-pagination__item">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+        <li class="slider-pagination__item">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+      </ul>
+
+      <button
+        class="slider__button slider__control-forward back-forward-btn"
+        type="button"
+        aria-label="Вперед"
+      ></button>
+      <button
+        class="slider__button slider__control-back back-forward-btn"
+        type="button"
+        aria-label=""
+      ></button>
+    </div>
+
+    <!-- ! Goods of day -->
+    <div class="super-offer">
+      <a href="" class="supper-offer-link">
+        <div class="offer-comprasion">
+          <p class="offer-comprasion__new-price">200 ₽</p>
+          <b class="offer-comprasion__old-price">500 ₽</b>
+        </div>
+
+        <div class="offer-demonstration">
+          <picture class="offer-demonstration__img">
+            <source
+              type="image/webp"
+              srcset="img/index/lamp@1x.webp 1x, img/index/lamp@2x.webp 2x"
+            />
+            <!-- 1х: 232px; 2x: 464px -->
+            <img
+              src="img/index/lamp@1x.jpg"
+              srcset="img/index/lamp@2x.jpg 2x"
+              width="150px"
+              height="187px"
+              alt="Лампа накаливания"
+            />
+          </picture>
+          <b class="offer-demonstration__title">
+            Галогенная лампа Philips Premium H7 12V 55W...</b
+          >
+        </div>
+
+        <div class="offer-action">
+          <p class="offer-action__count-down-title">Спешите, спешите!</p>
+
+          <table class="offer-action__countdown">
+            <tr class="offer-action__countdown-tr">
+              <td class="offer-action__hours-digits">00</td>
+              <td class="offer-action__mins-digits">20</td>
+              <td class="offer-action__seconds-digits">19</td>
+            </tr>
+
+            <tr class="offer-action__countdown-tr">
+              <td class="offer-action__hours-text">часов</td>
+              <td class="offer-action__mins-text">минут</td>
+              <td class="offer-action__seconds-text">cекунд</td>
+            </tr>
+          </table>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+			
+	</main>
+  </body>
+</html>
