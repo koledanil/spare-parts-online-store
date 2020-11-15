@@ -5,8 +5,8 @@
 }
 
 @mixin textLinkReset {
-  text-decoration: none;
   color: $grey100;
+  text-decoration: none;
 }
 
 @mixin fontBody {
@@ -27,7 +27,7 @@ $grey50: #a8a8a8;
 $grey25: #cdcdcd;
 $grey0: #f0f0f4;
 
-$orangeB: #ff7931;
+$orangeB: #fd823f;
 
 $controlOpacityFullOVerlay: 0.64;
 $controlOpacityBg: 0.16;

@@ -1,29 +1,27 @@
-<section class="index-main__search-form">
-  <div class="search-form">
-    <h2 class="visually-hidden">Поиск по сайту</h2>
-    <!-- ! Search switcher -->
-    <ul class="search-form__list">
-      <li class="search-form__item">
-        <a class="search-form__link">Искать по</a>
-      </li>
-      <li class="search-form__item">
-        <a href="#" class="search-form__link">Vin-коду</a>
-      </li>
-      <li class="search-form__item">
-        <a href="#" class="search-form__link">марке</a>
-      </li>
-      <li class="search-form__item search-form__item--active">
-        <a href="#" class="search-form__link">названию</a>
-      </li>
-      <li class="search-form__item">
-        <a href="#" class="search-form__link">артикулу</a>
-      </li>
-    </ul>
-
-    <!-- ! Search field -->
-    <div class="search-field">
+<section class="main-search-container">
+  <div class="search-container">
+    <div class="search-tabs">
+      <ul class="search-tabs__list">
+        <li class="search-tabs__item">
+          <p class="search-tabs__helper">Искать деталь по</p>
+        </li>
+        <li class="search-tabs__item">
+          <a href="#" class="search-tabs__link search-tabs__link--active"
+            >vin-коду</a
+          >
+        </li>
+        <li class="search-tabs__item">
+          <a href="#" class="search-tabs__link">марке</a>
+        </li>
+        <li class="search-tabs__item">
+          <a href="#" class="search-tabs__link">названию</a>
+        </li>
+        <li class="search-tabs__item">
+          <a href="#" class="search-tabs__link">артикулу</a>
+        </li>
+      </ul>
       <h3 class="visually-hidden">Поиск по vin</h3>
-      <form class="search-field__form" method="POST" action="#">
+      <form class="search-form" method="POST" action="#">
         <label class="visually-hidden" for="search-vin-input"
           >Введите vin-код</label
         >
@@ -33,10 +31,10 @@
           id="search-vin-input"
           name="search-input"
           required=""
-          class="search-field__input"
+          class="search-form__input"
         />
-        <button class="button" type="submit">
-          <span class="search-field__button">Искать</span>
+        <button class="cta-button search-form__button" type="submit">
+          Искать
         </button>
       </form>
     </div>

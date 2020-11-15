@@ -16,6 +16,25 @@ img {
   height: auto;
 }
 
+a {
+  color: $orangeB;
+}
+
+.cta-button {
+  @include resetMarginPadding;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: $orangeB;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
 // ! Back-forward btn slider
 // ! Position added in specific files for each slider
 .back-forward-btn {
@@ -49,4 +68,16 @@ img {
   &:hover::after {
     background-color: rgba($grey100, $controlOpacityControlOnBg);
   }
+}
+
+// ! Visually-hidden
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
