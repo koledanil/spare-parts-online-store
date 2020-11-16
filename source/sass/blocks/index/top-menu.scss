@@ -1,3 +1,6 @@
+.nav-menu-container {
+  margin-bottom: 80px;
+}
 .nav-container {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
@@ -22,6 +25,7 @@
     padding: 0px 0px 0px 0px;
 
     text-decoration: none;
+    font-weight: bold;
 
     color: $grey100;
     font-weight: bold;

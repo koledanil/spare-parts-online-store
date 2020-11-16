@@ -1,5 +1,6 @@
 // ! Slider
 .top-promo-container {
+  margin-top: 80px;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
@@ -180,7 +181,7 @@
     padding-left: 12px;
     padding-right: 12px;
     height: 24px;
-    background: linear-gradient(91.1deg, #9710e9 1.17%, #fd8d43 99.31%);
+    background: $gradientBrand;
   }
 }
 

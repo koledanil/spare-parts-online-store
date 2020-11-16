@@ -1,0 +1,128 @@
+.departments-container {
+  @include flex1170;
+}
+.departments {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    @include resetMarginPadding;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    @include resetMarginPadding;
+    display: block;
+    width: 370px;
+    border: 1px solid $grey25;
+    border-radius: $borderRadiusElement;
+    margin-bottom: 32px;
+    padding: 24px;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  &__name {
+    @include resetMarginPadding;
+    color: $grey100;
+    margin-bottom: 40px;
+  }
+
+  &__gogo {
+    @include resetMarginPadding;
+    color: $grey75;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 12px;
+      height: 12px;
+      background-image: url("/img/global/arrow-link.svg");
+      background-repeat: no-repeat;
+      top: 7px;
+      left: 72px;
+    }
+  }
+
+  &__icon {
+    @include resetMarginPadding;
+  }
+
+  &__icon--chemistry {
+    @include resetMarginPadding;
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url("/img/draft-depart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__icon--tires {
+    @include resetMarginPadding;
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url("/img/draft-depart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__icon--tools {
+    @include resetMarginPadding;
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url("/img/draft-depart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__icon--spares {
+    @include resetMarginPadding;
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url("/img/draft-depart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__icon--electro {
+    @include resetMarginPadding;
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url("/img/draft-depart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__icon--accessories {
+    @include resetMarginPadding;
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url("/img/draft-depart.svg");
+    background-repeat: no-repeat;
+  }
+}
