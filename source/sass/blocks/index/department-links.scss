@@ -12,6 +12,10 @@
 
   &__item {
     position: relative;
+    margin-bottom: 32px;
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
   }
 
   &__link {
@@ -20,7 +24,6 @@
     width: 370px;
     border: 1px solid $grey25;
     border-radius: $borderRadiusElement;
-    margin-bottom: 32px;
     padding: 24px;
     box-sizing: border-box;
     text-decoration: none;
@@ -34,7 +37,7 @@
 
   &__gogo {
     @include resetMarginPadding;
-    color: $grey75;
+    color: $grey50;
     position: relative;
 
     &::after {

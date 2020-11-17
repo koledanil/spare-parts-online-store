@@ -10,6 +10,7 @@
   width: 1170px;
   display: flex;
   margin: auto;
+
   justify-content: space-between;
 }
 .slider {
@@ -29,6 +30,7 @@
   &__img {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    border-radius: $borderRadiusBlock;
   }
 
   &__text-container {
@@ -123,6 +125,7 @@
   width: 270px;
   border: 1px solid $grey25;
   position: relative;
+  border-radius: $borderRadiusBlock;
 }
 
 .offer-comprasion {
@@ -171,7 +174,7 @@
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    top: 22px;
+    top: 23px;
     left: -25px;
     letter-spacing: 2px;
     display: block;
@@ -182,6 +185,8 @@
     padding-right: 12px;
     height: 24px;
     background: $gradientBrand;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 }
 
@@ -221,6 +226,7 @@
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+  border-radius: $borderRadiusBlock;
 
   &__count-down-title {
     @include resetMarginPadding;

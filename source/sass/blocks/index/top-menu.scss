@@ -17,7 +17,7 @@
   width: 474px;
   align-items: center;
   &__item {
-    margin-right: 64px;
+    margin-right: 32px;
   }
 
   &__link {
@@ -105,7 +105,7 @@
   &__link {
     @include textLinkReset;
     display: block;
-    line-height: 32px;
+    line-height: 40px;
   }
 
   &__item--active {
@@ -114,7 +114,7 @@
       position: absolute;
       display: block;
       left: 0px;
-      bottom: -9px;
+      bottom: -5px;
 
       width: 100%;
 
