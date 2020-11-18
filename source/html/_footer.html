@@ -1,34 +1,37 @@
-<footer class="index-main__main-footer">
-  <div class="main-footer">
-    <div class="main-footer__email-container">
-      <h2 class="main-footer__catchy-text">
+<footer class="footer-site">
+  <div class="footer-container">
+    <!-- ! Email -->
+    <div class="email">
+      <h2 class="email__title">
         Подпишитесь на нашу рассылку и узнавайте об акция быстрее
       </h2>
-      <!-- !Subscribe form -->
-      <form class="subscribe-form" method="POST" action="#">
+      <form class="email__form" method="POST" action="#">
         <label class="visually-hidden" for="subscribe-input"
           >Введите vin-код</label
         >
         <input
           type="email"
-          placeholder="Введите ваш e-mail"
+          placeholder="Электронная почта"
           id="subscribe-me"
           name="subscribe-input"
           required=""
-          class="subscribe-form__input"
+          class="email__input"
         />
-        <button class="button" type="submit">
+        <button class="cta-button email__button" type="submit">
           <span class="subscribe-form__button">Подписаться</span>
         </button>
       </form>
+      <p class="email__copy-text">Интернет-магазин автозапчастей</p>
     </div>
 
-    <div class="footer-menu">
-      <div class="footer-menu__container">
+    <!-- ! Footer menu -->
+    <div class="footer-menu-container">
+      <!-- 1 -->
+      <div class="footer-menu">
         <b class="footer-menu__title">Информация</b>
         <ul class="footer-menu__list">
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">О компании</a>
+            <a href="#" class="footer-menu__link">Компания</a>
           </li>
           <li class="footer-menu__item">
             <a href="#" class="footer-menu__link">Контакты</a>
@@ -42,41 +45,62 @@
         </ul>
       </div>
 
-      <div class="footer-menu__container">
-        <b class="footer-menu__title">Информация</b>
+      <!--2 -->
+      <div class="footer-menu">
+        <b class="footer-menu__title">Сервисный центр</b>
         <ul class="footer-menu__list">
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">О компании</a>
+            <a href="#" class="footer-menu__link">Доставка</a>
           </li>
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Контакты</a>
+            <a href="#" class="footer-menu__link">Способы оплаты</a>
           </li>
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Реквизиты</a>
+            <a href="#" class="footer-menu__link">Бренды</a>
           </li>
           <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Магазины</a>
+            <a href="#" class="footer-menu__link">Гарантия</a>
           </li>
         </ul>
       </div>
 
-      <div class="footer-menu__container">
-        <b class="footer-menu__title">Информация</b>
-        <ul class="footer-menu__list">
-          <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">О компании</a>
-          </li>
-          <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Контакты</a>
-          </li>
-          <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Реквизиты</a>
-          </li>
-          <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link">Магазины</a>
-          </li>
-        </ul>
+      <!-- 3 -->
+      <div class="footer-menu two-columns">
+        <b class="footer-menu__title">Интернет-магазин</b>
+        <div class="two-columns-container">
+          <ul class="footer-menu__list two-columns-space">
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">График доставки</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Бренды</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Возврат</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Магазины</a>
+            </li>
+          </ul>
+
+          <ul class="footer-menu__list two-columns-space">
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Доставка</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Способы оплаты</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Акции</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Точки выдачи</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <!-- end -->
     </div>
   </div>
 </footer>

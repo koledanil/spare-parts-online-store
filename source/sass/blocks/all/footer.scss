@@ -1,0 +1,101 @@
+.footer-site {
+  background-color: $grey0;
+}
+
+.footer-container {
+  @include flex1170;
+  flex-wrap: wrap;
+  padding-top: 42px;
+  padding-bottom: 24px;
+}
+
+.email {
+  @include resetMarginPadding;
+
+  width: 320px;
+  padding-right: 160px;
+  &__title {
+    @include resetMarginPadding;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+    padding-right: 88px;
+  }
+
+  &__form {
+    @include resetMarginPadding;
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    background-color: white;
+    border-radius: $borderRadiusElement;
+    padding-left: 8px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 32px;
+    border: 1px solid $grey25;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+
+  &__button {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  &__copy-text {
+    @include resetMarginPadding;
+    margin-top: 32px;
+    font-size: 14px;
+    color: $grey75;
+  }
+}
+
+.footer-menu-container {
+  flex-grow: 1;
+  display: flex;
+}
+
+.footer-menu {
+  &__title {
+    @include resetMarginPadding;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    font-size: 14px;
+    list-style-type: none;
+    @include resetMarginPadding;
+    margin-right: 104px;
+  }
+
+  &__link {
+    @include textLinkReset;
+  }
+}
+
+.two-columns {
+  @include resetMarginPadding;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &-space {
+    margin-right: 32px;
+  }
+}
+.two-columns-container {
+  display: flex;
+}
