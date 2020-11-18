@@ -70,6 +70,7 @@ a {
     background-color: rgba($grey100, $controlOpacityControlOnBg);
   }
 }
+
 // ! mod for slider in the middle of the page
 .back-forward-btn--slider-goods {
   &:after {
@@ -84,6 +85,181 @@ a {
 
   &:hover::after {
     background-color: rgba($grey50, $controlOpacityControlOnBg);
+  }
+}
+
+//! slider tabs and slider
+.tab {
+  list-style: none;
+  display: flex;
+  @include resetMarginPadding;
+  padding-bottom: 12px;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $grey25;
+
+  &__item {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    &:nth-child(1) {
+      padding-left: 0px;
+    }
+
+    &:last-child {
+      padding-right: 0px;
+      text-align: right;
+    }
+  }
+
+  &__link {
+    @include textLinkReset;
+    display: block;
+    line-height: 32px;
+    position: relative;
+  }
+
+  &__link--active {
+    font-weight: bold;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0px;
+      bottom: -13px;
+
+      width: 100%;
+
+      height: 4px;
+      background-color: $orangeB;
+    }
+  }
+
+  &__title {
+    @include resetMarginPadding;
+    margin-bottom: 0px;
+    width: 320px;
+  }
+}
+
+.card {
+  display: flex;
+  list-style: none;
+  @include resetMarginPadding;
+  margin-top: 32px;
+  justify-content: space-between;
+
+  &__item {
+    width: 270px;
+    border: 1px solid $grey25;
+    border-radius: $borderRadiusBlock;
+    position: relative;
+
+    &--sale::after {
+      content: "Акция";
+      transform: rotate(-90deg);
+      position: absolute;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      top: 23px;
+      left: -25px;
+      letter-spacing: 2px;
+      display: block;
+      width: auto;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 12px;
+      padding-right: 12px;
+      height: 24px;
+      background: $gradientBrand;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+  }
+
+  &__img-container {
+    display: flex;
+    width: 270px;
+    justify-content: center;
+    align-items: flex-end;
+    height: 240px;
+  }
+
+  &__img {
+    display: block;
+    @include resetMarginPadding;
+  }
+
+  &__title-container {
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+  }
+
+  &__link {
+    @include textLinkReset;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+  }
+
+  &__price {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+
+  &__price--out {
+    color: $grey50;
+  }
+
+  &__btn-container {
+    @include resetMarginPadding;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  &__buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    background: $orangeB;
+    border: 1px solid $orangeB;
+
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+    @include textLinkReset;
+  }
+
+  &__notify-me {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__favourite {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @include resetMarginPadding;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
   }
 }
 

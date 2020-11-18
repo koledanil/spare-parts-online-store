@@ -1,0 +1,13 @@
+.promo-banner {
+  @include resetMarginPadding;
+  @include flex1170;
+  margin-bottom: 80px;
+}
+
+.banner {
+  @include resetMarginPadding;
+  &__img {
+    @include resetMarginPadding;
+    border-radius: $borderRadiusBlock;
+  }
+}
