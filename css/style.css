@@ -1329,10 +1329,8 @@ a {
   display: flex;
 }
 
-.icon-test {
-  fill: green;
-}
-
-.icon-test:hover {
+.svg-_magnifying-glass-dims {
+  width: 42px;
+  height: 42px;
   fill: red;
 }
