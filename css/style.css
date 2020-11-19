@@ -1328,3 +1328,11 @@ a {
   display: -ms-flexbox;
   display: flex;
 }
+
+.icon-test {
+  fill: green;
+}
+
+.icon-test:hover {
+  fill: red;
+}
