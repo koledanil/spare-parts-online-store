@@ -16,6 +16,8 @@
   display: flex;
   width: 474px;
   align-items: center;
+  padding-left: 12px;
+
   &__item {
     margin-right: 32px;
   }
@@ -36,7 +38,7 @@
 
 .store-logo {
   display: flex;
-  width: 223px;
+  width: 211px;
   justify-content: center;
   align-items: center;
   min-height: 96px;
@@ -55,6 +57,8 @@
   line-height: 20px;
 
   &__link {
+    padding-left: 16px;
+    font-size: 14px;
     text-decoration: none;
     color: $grey100;
   }
@@ -70,7 +74,7 @@
   justify-content: flex-end;
 
   &__item {
-    margin-left: 4px;
+    margin-left: 8px;
   }
 
   &__link {

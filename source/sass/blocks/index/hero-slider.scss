@@ -244,12 +244,14 @@
 
     &::before {
       content: "";
-      background-image: url("/img/iconsprite/icons.svg#_timer");
+      background-image: url("/img/index/icon_countdown.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
       position: absolute;
-      bottom: 16px;
+      bottom: 12px;
       display: block;
-      width: 32px;
-      height: 32px;
+      width: 40px;
+      height: 40px;
     }
   }
 

@@ -1,0 +1,15 @@
+<svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="48.5" cy="48.5" r="48.5" fill="#FF7931"/>
+<circle cx="48" cy="48.5" r="26.5" stroke="white" stroke-width="2"/>
+<circle cx="48.0002" cy="48.5" r="13.3478" stroke="white" stroke-width="2"/>
+<circle cx="28.2718" cy="49.0978" r="2.98913" fill="white"/>
+<circle cx="67.7284" cy="49.0978" r="2.98913" fill="white"/>
+<circle cx="63.5436" cy="36.5435" r="2.3913" fill="white"/>
+<circle cx="53.9782" cy="29.3695" r="2.3913" fill="white"/>
+<circle cx="42.0217" cy="29.3695" r="2.3913" fill="white"/>
+<circle cx="32.4562" cy="36.5435" r="2.3913" fill="white"/>
+<circle r="2.3913" transform="matrix(-1 0 0 1 63.5428 60.4565)" fill="white"/>
+<circle r="2.3913" transform="matrix(-1 0 0 1 53.9773 67.6304)" fill="white"/>
+<circle r="2.3913" transform="matrix(-1 0 0 1 42.0208 67.6304)" fill="white"/>
+<circle r="2.3913" transform="matrix(-1 0 0 1 32.4559 60.4565)" fill="white"/>
+</svg>

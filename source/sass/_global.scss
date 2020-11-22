@@ -34,6 +34,11 @@ a {
   border-radius: $borderRadiusElement;
 }
 
+// ! sprite icon default
+.icon-sprite {
+  fill: $grey50;
+}
+
 // ! Back-forward btn slider
 // ! Position added in specific files for each slider
 .back-forward-btn {
@@ -45,7 +50,7 @@ a {
   &:after {
     content: "";
     background-color: rgba($grey100, $controlOpacityBg);
-    background-image: url("/img/global/arrow-right.svg");
+    background-image: url("/img/global/sliderArrow/arrowRight--white.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 40px;
@@ -76,7 +81,7 @@ a {
   &:after {
     content: "";
     background-color: $grey0;
-    background-image: url("/img/global/arrow-right--orange.svg");
+    background-image: url("/img/global/sliderArrow/arrowRight--dark.svg");
   }
 
   &:hover {
