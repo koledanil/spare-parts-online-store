@@ -50,7 +50,7 @@ a {
   &:after {
     content: "";
     background-color: rgba($grey100, $controlOpacityBg);
-    background-image: url("/img/global/sliderArrow/arrowRight--white.svg");
+    background-image: url("../img/global/sliderArrow/arrowRight--white.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 40px;
@@ -81,7 +81,7 @@ a {
   &:after {
     content: "";
     background-color: $grey0;
-    background-image: url("/img/global/sliderArrow/arrowRight--dark.svg");
+    background-image: url("../img/global/sliderArrow/arrowRight--dark.svg");
   }
 
   &:hover {
@@ -101,12 +101,11 @@ a {
   padding-bottom: 12px;
   align-items: baseline;
   justify-content: space-between;
-  flex-wrap: wrap;
   border-bottom: 1px solid $grey25;
 
   &__item {
     padding-left: 8px;
-    padding-right: 8px;
+    padding-right: 16px;
 
     &:nth-child(1) {
       padding-left: 0px;
@@ -115,6 +114,10 @@ a {
     &:last-child {
       padding-right: 0px;
       text-align: right;
+    }
+
+    &--link {
+      margin-left: auto;
     }
   }
 
