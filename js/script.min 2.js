@@ -1,0 +1,1 @@
+"use strict";const calculon=function(c,l){const o=c+l;console.log(o)};calculon(2,17),calculon(10,1),calculon("Я"," подключился");

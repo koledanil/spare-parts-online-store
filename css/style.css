@@ -774,7 +774,7 @@ a {
 
 .offer-action__countdown::before {
   content: "";
-  background-image: url("/img/index/icon_countdown.svg");
+  background-image: url("../img/index/icon_countdown.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
