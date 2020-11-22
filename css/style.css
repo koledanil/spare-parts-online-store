@@ -1006,7 +1006,7 @@ a {
   display: block;
   width: 12px;
   height: 12px;
-  background-image: url("img/global/arrow-link.svg");
+  background-image: url("/img/global/arrow-link.svg");
   background-repeat: no-repeat;
   top: 7px;
   left: 72px;
@@ -1026,7 +1026,7 @@ a {
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("img/index/department/chemistry.svg");
+  background-image: url("/img/index/department/chemistry.svg");
   background-repeat: no-repeat;
 }
 
@@ -1039,7 +1039,7 @@ a {
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("img/index/department/wheels.svg");
+  background-image: url("/img/index/department/wheel.svg");
   background-repeat: no-repeat;
 }
 
@@ -1052,7 +1052,7 @@ a {
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("img/index/department/tools.svg");
+  background-image: url("/img/index/department/tools.svg");
   background-repeat: no-repeat;
 }
 
@@ -1065,7 +1065,7 @@ a {
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("img/index/department/spare.svg");
+  background-image: url("/img/index/department/spare.svg");
   background-repeat: no-repeat;
 }
 
@@ -1078,7 +1078,7 @@ a {
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("img/index/department/electricity.svg");
+  background-image: url("/img/index/department/electricity.svg");
   background-repeat: no-repeat;
 }
 
@@ -1091,7 +1091,7 @@ a {
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url("img/index/department/others.svg");
+  background-image: url("/img/index/department/others.svg");
   background-repeat: no-repeat;
 }
 
