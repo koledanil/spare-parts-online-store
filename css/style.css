@@ -53,7 +53,8 @@ a {
 .back-forward-btn:after {
   content: "";
   background-color: rgba(50, 51, 54, 0.16);
-  background-image: url("/img/global/sliderArrow/arrowRight--orange.png");
+  background-image: url("/img/global/sliderArrow/arrow.png");
+  background-image: url("../img/global/sliderArrow/qqq.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 40px;
