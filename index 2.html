@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gulp, gulp, done!</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="build/css/normalize.css">
+  </head>
+
+  <body class="index-body">
+		<header class="nav-menu-container">
+  <nav class="nav-container">
+    <!-- ! Favourite menu -->
+    <ul class="fav-menu">
+      <li class="fav-menu__item">
+        <a href="#" class="fav-menu__link">Магазины</a>
+      </li>
+      <li class="fav-menu__item">
+        <a href="#" class="fav-menu__link">Акции</a>
+      </li>
+      <li class="fav-menu__item">
+        <a href="#" class="fav-menu__link">Доставка и оплата</a>
+      </li>
+    </ul>
+
+    <!-- ! Logo -->
+    <div class="store-logo">
+      <a href="#" class="store-logo__link"
+        ><img
+          src="/img/global/store-logo.svg"
+          alt="Логотип интернет-магазина"
+          class="store-logo__img"
+      /></a>
+    </div>
+
+    <!-- ! Address -->
+    <div class="nav-address">
+      <a href="" class="nav-address__link"
+        >Санкт-Петербург, ул.Большая Конюшенная, д. 19</a
+      >
+    </div>
+
+    <!-- ! Service menu -->
+    <ul class="service-menu">
+      <li class="service-menu__item">
+        <a href="#" class="service-menu__link" aria-labeled="Избранное">
+          <svg width="24px" height="24px" viewBox="0 0 24 24" class="red">
+            <use xlink:href="img/iconsprite/icons.svg#_timer"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="service-menu__item">
+        <a href="#" class="service-menu__link" aria-labeled="Войти">
+          <svg width="24px" height="24px" viewBox="0 0 24 24" class="red">
+            <use xlink:href="img/iconsprite/icons.svg#_login"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="service-menu__item">
+        <a href="#" class="service-menu__link" aria-labeled="Корзина">
+          <svg width="24px" height="24px" viewBox="0 0 24 24">
+            <use xlink:href="img/iconsprite/icons.svg#_login"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <!-- ! Main links, bottom menu -->
+    <ul class="nav-menu">
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Каталог запчастей</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Каталог ТО</a>
+      </li>
+      <li class="nav-menu__item nav-menu__item--active">
+        <a href="#" class="nav-menu__link">Шины</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Диски</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Аккумуляторы</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Масла</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Лампы</a>
+      </li>
+      <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Аксессуары</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+	<main class="index-main">
+		<section class="top-promo-container">
+  <div class="promo-container">
+    <div class="slider">
+      <ul class="slider__list">
+        <li class="slider__item">
+          <a href="#" class="slider__link"
+            ><img
+              src="img/index/s1_carbo@1x.jpg"
+              alt="Реклама. Запчасти на все виды автомобилей"
+              class="slider__img"
+            />
+            <div class="slider__text-container">
+              <b class="slider__title">Запчасти</b>
+              <b class="slider__subtitle"
+                >на все виды автомобилей по цене производителя</b
+              >
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="slider-pagination">
+        <li class="slider-pagination__item slide-pagination__item--active">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+        <li class="slider-pagination__item">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+        <li class="slider-pagination__item">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+        <li class="slider-pagination__item">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+        <li class="slider-pagination__item">
+          <a href="#" class="slider-pagination__link"></a>
+        </li>
+      </ul>
+
+      <button
+        class="slider__button slider__control-forward back-forward-btn"
+        type="button"
+        aria-label="Вперед"
+      ></button>
+      <button
+        class="slider__button slider__control-back back-forward-btn"
+        type="button"
+        aria-label=""
+      ></button>
+    </div>
+
+    <!-- ! Goods of day -->
+    <div class="super-offer">
+      <a href="" class="supper-offer-link">
+        <div class="offer-comprasion">
+          <p class="offer-comprasion__new-price">200 ₽</p>
+          <b class="offer-comprasion__old-price">500 ₽</b>
+        </div>
+
+        <div class="offer-demonstration">
+          <picture class="offer-demonstration__img">
+            <source
+              type="image/webp"
+              srcset="img/index/lamp@1x.webp 1x, img/index/lamp@2x.webp 2x"
+            />
+            <!-- 1х: 232px; 2x: 464px -->
+            <img
+              src="img/index/lamp@1x.jpg"
+              srcset="img/index/lamp@2x.jpg 2x"
+              width="150px"
+              height="187px"
+              alt="Лампа накаливания"
+            />
+          </picture>
+          <b class="offer-demonstration__title">
+            Галогенная лампа Philips Premium H7 12V 55W...</b
+          >
+        </div>
+
+        <div class="offer-action">
+          <p class="offer-action__count-down-title">Спешите, спешите!</p>
+
+          <table class="offer-action__countdown">
+            <tr class="offer-action__countdown-tr">
+              <td class="offer-action__hours-digits">00</td>
+              <td class="offer-action__mins-digits">20</td>
+              <td class="offer-action__seconds-digits">19</td>
+            </tr>
+
+            <tr class="offer-action__countdown-tr">
+              <td class="offer-action__hours-text">часов</td>
+              <td class="offer-action__mins-text">минут</td>
+              <td class="offer-action__seconds-text">cекунд</td>
+            </tr>
+          </table>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+		<section class="main-search-container">
+  <div class="search-container">
+    <div class="search-tabs">
+      <ul class="search-tabs__list">
+        <li class="search-tabs__item">
+          <p class="search-tabs__helper">Искать деталь по</p>
+        </li>
+        <li class="search-tabs__item">
+          <a href="#" class="search-tabs__link search-tabs__link--active"
+            >vin-коду</a
+          >
+        </li>
+        <li class="search-tabs__item">
+          <a href="#" class="search-tabs__link">марке</a>
+        </li>
+        <li class="search-tabs__item">
+          <a href="#" class="search-tabs__link">названию</a>
+        </li>
+        <li class="search-tabs__item">
+          <a href="#" class="search-tabs__link">артикулу</a>
+        </li>
+      </ul>
+      <h3 class="visually-hidden">Поиск деталей</h3>
+      <form class="search-form" method="POST" action="#">
+        <label class="visually-hidden" for="search-vin-input"
+          >Введите vin-код</label
+        >
+        <input
+          type="search"
+          placeholder="Введите vin код"
+          id="search-vin-input"
+          name="search-input"
+          required=""
+          class="search-form__input"
+        />
+        <button class="cta-button search-form__button" type="submit">
+          Искать
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+		<section class="index-main__departments">
+  <div class="departments-container">
+    <div class="departments">
+      <h2 class="visually-hidden">Категории товаров</h2>
+      <ul class="departments__list">
+        <li class="departments__item">
+          <a href="" class="departments__link">
+            <div
+              class="departments__icon departments__icon--chemistry"
+              aria-hidden="true"
+            ></div>
+            <h3 class="departments__name">Автохимия</h3>
+            <p class="departments__gogo">Перейти</p>
+          </a>
+        </li>
+        <li class="departments__item">
+          <a href="" class="departments__link">
+            <div
+              class="departments__icon departments__icon--tires"
+              aria-hidden="true"
+            ></div>
+            <h3 class="departments__name">Шины и диски</h3>
+            <p class="departments__gogo">Перейти</p>
+          </a>
+        </li>
+        <li class="departments__item">
+          <a href="" class="departments__link">
+            <div
+              class="departments__icon departments__icon--tools"
+              aria-hidden="true"
+            ></div>
+            <h3 class="departments__name">Инструменты</h3>
+            <p class="departments__gogo">Перейти</p>
+          </a>
+        </li>
+        <li class="departments__item">
+          <a href="" class="departments__link">
+            <div
+              class="departments__icon departments__icon--spares"
+              aria-hidden="true"
+            ></div>
+            <h3 class="departments__name">Запчасти на ТО</h3>
+            <p class="departments__gogo">Перейти</p>
+          </a>
+        </li>
+        <li class="departments__item">
+          <a href="" class="departments__link">
+            <div
+              class="departments__icon departments__icon--electro"
+              aria-hidden="true"
+            ></div>
+            <h3 class="departments__name">Автоэлектроника</h3>
+            <p class="departments__gogo">Перейти</p>
+          </a>
+        </li>
+        <li class="departments__item">
+          <a href="" class="departments__link">
+            <div
+              class="departments__icon departments__icon--accessories"
+              aria-hidden="true"
+            ></div>
+            <h3 class="departments__name">Аксессуары</h3>
+            <p class="departments__gogo">Перейти</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+		<section class="popular-container">
+  <div class="popular-goods-container">
+    <!-- ! Popular goods controls -->
+    <div class="popular-goods">
+      <div class="popular-goods__tab">
+        <!-- ! Tabs list -->
+        <ul class="tab">
+          <li class="tab__item">
+            <h2 class="tab__title">Популярные товары</h2>
+          </li>
+          <li class="tab__item"><a href="#" class="tab__link">Запчасти</a></li>
+          <li class="tab__item">
+            <a class="tab__link tab__link--active">Автохимия</a>
+          </li>
+          <li class="tab__item">
+            <a href="#" class="tab__link">Шины и диски</a>
+          </li>
+          <li class="tab__item">
+            <a href="#" class="tab__link">Автоэлектроника</a>
+          </li>
+          <li class="tab__item">
+            <a href="#" class="tab__link">Инструменты</a>
+          </li>
+          <li class="tab__item">
+            <a href="#">Смотреть все</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card-container">
+        <ul class="card">
+          <li class="card__item card__item--sale">
+            <a href="#" class="card__link">
+              <div class="card__img-container">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/index/lamp@1x.webp 1x,
+                      img/index/lamp@2x.webp 2x
+                    "
+                  />
+                  <!-- 1х: 230px; 2x: 460px -->
+                  <img
+                    class="card__img"
+                    src="img/index/lamp@1x.jpg"
+                    srcset="img/index/lamp@2x.jpg 2x"
+                    width="171px"
+                    height="201px"
+                    alt="Лампа накаливания"
+                  />
+                </picture>
+              </div>
+              <div class="card__title-container">
+                <h3 class="card__title">
+                  Ширина 205/80 R16 104Q Misha RF Power Grum
+                </h3>
+                <b class="card__price">11 680 ₽</b>
+              </div>
+
+              <div class="card__btn-container">
+                <button
+                  class="card__favourite"
+                  aria-label="Добавить в избранное"
+                >
+                  <svg
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.36656 1C3.47849 1 0.392496 4.56658 1.10209 9.68573C1.71793 14.1286 12.3223 23 13.5 23C14.6777 23 25.2821 14.1286 25.8979 9.68573C26.6075 4.56647 23.5215 1 19.6334 1C17.0414 1 15.0222 2.0898 13.5 4.26939C11.9778 2.0898 9.9586 1 7.36656 1Z"
+                      stroke="black"
+                      stroke-opacity="0.3"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+
+                <a
+                  href="#"
+                  class="card__buy"
+                  aria-label="Добавить в корзину"
+                  type="button"
+                  ><svg
+                    width="22"
+                    height="26"
+                    viewBox="0 0 22 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6.53846V25H21V6.53846H1ZM5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846"
+                      fill="#FF7931"
+                    />
+                    <path
+                      d="M5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846M1 6.53846V25H21V6.53846H1Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="card__notify-btn visually-hidden"
+                  >Сообщить о поступлении</a
+                >
+              </div>
+            </a>
+          </li>
+          <li class="card__item card__item--sale">
+            <a href="#" class="card__link">
+              <div class="card__img-container">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/index/lamp@1x.webp 1x,
+                      img/index/lamp@2x.webp 2x
+                    "
+                  />
+                  <!-- 1х: 230px; 2x: 460px -->
+                  <img
+                    class="card__img"
+                    src="img/index/lamp@1x.jpg"
+                    srcset="img/index/lamp@2x.jpg 2x"
+                    width="171px"
+                    height="201px"
+                    alt="Лампа накаливания"
+                  />
+                </picture>
+              </div>
+              <div class="card__title-container">
+                <h3 class="card__title">
+                  Ширина 205/80 R16 104Q Misha RF Power Grum
+                </h3>
+                <b class="card__price">11 680 ₽</b>
+              </div>
+
+              <div class="card__btn-container">
+                <button
+                  class="card__favourite"
+                  aria-label="Добавить в избранное"
+                >
+                  <svg
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.36656 1C3.47849 1 0.392496 4.56658 1.10209 9.68573C1.71793 14.1286 12.3223 23 13.5 23C14.6777 23 25.2821 14.1286 25.8979 9.68573C26.6075 4.56647 23.5215 1 19.6334 1C17.0414 1 15.0222 2.0898 13.5 4.26939C11.9778 2.0898 9.9586 1 7.36656 1Z"
+                      stroke="black"
+                      stroke-opacity="0.3"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+
+                <a
+                  href="#"
+                  class="card__buy"
+                  aria-label="Добавить в корзину"
+                  type="button"
+                  ><svg
+                    width="22"
+                    height="26"
+                    viewBox="0 0 22 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6.53846V25H21V6.53846H1ZM5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846"
+                      fill="#FF7931"
+                    />
+                    <path
+                      d="M5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846M1 6.53846V25H21V6.53846H1Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="card__notify-btn visually-hidden"
+                  >Сообщить о поступлении</a
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="card__item">
+            <a href="#" class="card__link">
+              <div class="card__img-container">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/index/lamp@1x.webp 1x,
+                      img/index/lamp@2x.webp 2x
+                    "
+                  />
+                  <!-- 1х: 230px; 2x: 460px -->
+                  <img
+                    class="card__img"
+                    src="img/index/lamp@1x.jpg"
+                    srcset="img/index/lamp@2x.jpg 2x"
+                    width="171px"
+                    height="201px"
+                    alt="Лампа накаливания"
+                  />
+                </picture>
+              </div>
+              <div class="card__title-container">
+                <h3 class="card__title">
+                  Ширина 205/80 R16 104Q Misha RF Power Grum
+                </h3>
+                <b class="card__price">112 680 ₽</b>
+              </div>
+
+              <div class="card__btn-container">
+                <button
+                  class="card__favourite"
+                  aria-label="Добавить в избранное"
+                >
+                  <svg
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.36656 1C3.47849 1 0.392496 4.56658 1.10209 9.68573C1.71793 14.1286 12.3223 23 13.5 23C14.6777 23 25.2821 14.1286 25.8979 9.68573C26.6075 4.56647 23.5215 1 19.6334 1C17.0414 1 15.0222 2.0898 13.5 4.26939C11.9778 2.0898 9.9586 1 7.36656 1Z"
+                      stroke="black"
+                      stroke-opacity="0.3"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+
+                <a
+                  href="#"
+                  class="card__buy"
+                  aria-label="Добавить в корзину"
+                  type="button"
+                  ><svg
+                    width="22"
+                    height="26"
+                    viewBox="0 0 22 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6.53846V25H21V6.53846H1ZM5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846"
+                      fill="#FF7931"
+                    />
+                    <path
+                      d="M5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846M1 6.53846V25H21V6.53846H1Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="card__notify-btn visually-hidden"
+                  >Сообщить о поступлении</a
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="card__item">
+            <a href="#" class="card__link">
+              <div class="card__img-container">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/index/lamp@1x.webp 1x,
+                      img/index/lamp@2x.webp 2x
+                    "
+                  />
+                  <!-- 1х: 230px; 2x: 460px -->
+                  <img
+                    class="card__img"
+                    src="img/index/lamp@1x.jpg"
+                    srcset="img/index/lamp@2x.jpg 2x"
+                    width="171px"
+                    height="201px"
+                    alt="Лампа накаливания"
+                  />
+                </picture>
+              </div>
+              <div class="card__title-container">
+                <h3 class="card__title">
+                  Ширина 205/80 R16 104Q Misha RF Power Grum
+                </h3>
+                <b class="card__price card__price--out">11 680 ₽</b>
+              </div>
+
+              <div class="card__btn-container">
+                <button
+                  class="card__favourite"
+                  aria-label="Добавить в избранное"
+                >
+                  <svg
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.36656 1C3.47849 1 0.392496 4.56658 1.10209 9.68573C1.71793 14.1286 12.3223 23 13.5 23C14.6777 23 25.2821 14.1286 25.8979 9.68573C26.6075 4.56647 23.5215 1 19.6334 1C17.0414 1 15.0222 2.0898 13.5 4.26939C11.9778 2.0898 9.9586 1 7.36656 1Z"
+                      stroke="black"
+                      stroke-opacity="0.3"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+
+                <a
+                  href="#"
+                  class="card__buy visually-hidden"
+                  aria-label="Добавить в корзину"
+                  type="button"
+                  ><svg
+                    width="22"
+                    height="26"
+                    viewBox="0 0 22 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6.53846V25H21V6.53846H1ZM5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846"
+                      fill="#FF7931"
+                    />
+                    <path
+                      d="M5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846M1 6.53846V25H21V6.53846H1Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="card__notify-me">Сообщить о поступлении</a>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <button
+          class="slider-popular__button slider-popular__control-forward back-forward-btn back-forward-btn--slider-goods"
+          type="button"
+          aria-label="Вперед"
+        ></button>
+        <button
+          class="slider-popular__button slider-popular__control-back back-forward-btn back-forward-btn--slider-goods"
+          type="button"
+          aria-label=""
+        ></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+		<section class="promo-banner">
+  <div class="banner">
+    <a href="" class="banner__link"
+      ><img
+        class="banner__img"
+        src="img/index/banner@1x.jpg"
+        alt="Распродажа покрышек. Скидки до -50%!"
+    /></a>
+  </div>
+</section>
+
+		<section class="complementary-container">
+  <div class="complementary-goods-container">
+    <!-- ! Popular goods controls -->
+    <div class="complementary-goods">
+      <div class="complementary-goods__tab">
+        <!-- ! Tabs list -->
+        <ul class="tab">
+          <li class="tab__item">
+            <h2
+              class="tab__title complementary-goods--title-without-link-right"
+            >
+              Также часто покупают
+            </h2>
+          </li>
+          <li class="tab__item"><a href="#" class="tab__link">Запчасти</a></li>
+          <li class="tab__item">
+            <a class="tab__link tab__link--active">Автохимия</a>
+          </li>
+          <li class="tab__item">
+            <a href="#" class="tab__link">Шины и диски</a>
+          </li>
+          <li class="tab__item">
+            <a href="#" class="tab__link">Автоэлектроника</a>
+          </li>
+          <li class="tab__item">
+            <a href="#" class="tab__link">Инструменты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card-container">
+        <ul class="card">
+          <li class="card__item card__item--sale">
+            <a href="#" class="card__link">
+              <div class="card__img-container">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/index/lamp@1x.webp 1x,
+                      img/index/lamp@2x.webp 2x
+                    "
+                  />
+                  <!-- 1х: 230px; 2x: 460px -->
+                  <img
+                    class="card__img"
+                    src="img/index/lamp@1x.jpg"
+                    srcset="img/index/lamp@2x.jpg 2x"
+                    width="171px"
+                    height="201px"
+                    alt="Лампа накаливания"
+                  />
+                </picture>
+              </div>
+              <div class="card__title-container">
+                <h3 class="card__title">
+                  Ширина 205/80 R16 104Q Misha RF Power Grum
+                </h3>
+                <b class="card__price">11 680 ₽</b>
+              </div>
+
+              <div class="card__btn-container">
+                <button
+                  class="card__favourite"
+                  aria-label="Добавить в избранное"
+                >
+                  <svg
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.36656 1C3.47849 1 0.392496 4.56658 1.10209 9.68573C1.71793 14.1286 12.3223 23 13.5 23C14.6777 23 25.2821 14.1286 25.8979 9.68573C26.6075 4.56647 23.5215 1 19.6334 1C17.0414 1 15.0222 2.0898 13.5 4.26939C11.9778 2.0898 9.9586 1 7.36656 1Z"
+                      stroke="black"
+                      stroke-opacity="0.3"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+
+                <a
+                  href="#"
+                  class="card__buy"
+                  aria-label="Добавить в корзину"
+                  type="button"
+                  ><svg
+                    width="22"
+                    height="26"
+                    viewBox="0 0 22 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6.53846V25H21V6.53846H1ZM5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846"
+                      fill="#FF7931"
+                    />
+                    <path
+                      d="M5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846M1 6.53846V25H21V6.53846H1Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="card__notify-btn visually-hidden"
+                  >Сообщить о поступлении</a
+                >
+              </div>
+            </a>
+          </li>
+          <li class="card__item card__item--sale">
+            <a href="#" class="card__link">
+              <div class="card__img-container">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/index/lamp@1x.webp 1x,
+                      img/index/lamp@2x.webp 2x
+                    "
+                  />
+                  <!-- 1х: 230px; 2x: 460px -->
+                  <img
+                    class="card__img"
+                    src="img/index/lamp@1x.jpg"
+                    srcset="img/index/lamp@2x.jpg 2x"
+                    width="171px"
+                    height="201px"
+                    alt="Лампа накаливания"
+                  />
+                </picture>
+              </div>
+              <div class="card__title-container">
+                <h3 class="card__title">
+                  Ширина 205/80 R16 104Q Misha RF Power Grum
+                </h3>
+                <b class="card__price">11 680 ₽</b>
+              </div>
+
+              <div class="card__btn-container">
+                <button
+                  class="card__favourite"
+                  aria-label="Добавить в избранное"
+                >
+                  <svg
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.36656 1C3.47849 1 0.392496 4.56658 1.10209 9.68573C1.71793 14.1286 12.3223 23 13.5 23C14.6777 23 25.2821 14.1286 25.8979 9.68573C26.6075 4.56647 23.5215 1 19.6334 1C17.0414 1 15.0222 2.0898 13.5 4.26939C11.9778 2.0898 9.9586 1 7.36656 1Z"
+                      stroke="black"
+                      stroke-opacity="0.3"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+
+                <a
+                  href="#"
+                  class="card__buy"
+                  aria-label="Добавить в корзину"
+                  type="button"
+                  ><svg
+                    width="22"
+                    height="26"
+                    viewBox="0 0 22 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6.53846V25H21V6.53846H1ZM5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846"
+                      fill="#FF7931"
+                    />
+                    <path
+                      d="M5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846M1 6.53846V25H21V6.53846H1Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="card__notify-btn visually-hidden"
+                  >Сообщить о поступлении</a
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="card__item">
+            <a href="#" class="card__link">
+              <div class="card__img-container">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/index/lamp@1x.webp 1x,
+                      img/index/lamp@2x.webp 2x
+                    "
+                  />
+                  <!-- 1х: 230px; 2x: 460px -->
+                  <img
+                    class="card__img"
+                    src="img/index/lamp@1x.jpg"
+                    srcset="img/index/lamp@2x.jpg 2x"
+                    width="171px"
+                    height="201px"
+                    alt="Лампа накаливания"
+                  />
+                </picture>
+              </div>
+              <div class="card__title-container">
+                <h3 class="card__title">
+                  Ширина 205/80 R16 104Q Misha RF Power Grum
+                </h3>
+                <b class="card__price">112 680 ₽</b>
+              </div>
+
+              <div class="card__btn-container">
+                <button
+                  class="card__favourite"
+                  aria-label="Добавить в избранное"
+                >
+                  <svg
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.36656 1C3.47849 1 0.392496 4.56658 1.10209 9.68573C1.71793 14.1286 12.3223 23 13.5 23C14.6777 23 25.2821 14.1286 25.8979 9.68573C26.6075 4.56647 23.5215 1 19.6334 1C17.0414 1 15.0222 2.0898 13.5 4.26939C11.9778 2.0898 9.9586 1 7.36656 1Z"
+                      stroke="black"
+                      stroke-opacity="0.3"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+
+                <a
+                  href="#"
+                  class="card__buy"
+                  aria-label="Добавить в корзину"
+                  type="button"
+                  ><svg
+                    width="22"
+                    height="26"
+                    viewBox="0 0 22 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6.53846V25H21V6.53846H1ZM5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846"
+                      fill="#FF7931"
+                    />
+                    <path
+                      d="M5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846M1 6.53846V25H21V6.53846H1Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="card__notify-btn visually-hidden"
+                  >Сообщить о поступлении</a
+                >
+              </div>
+            </a>
+          </li>
+
+          <li class="card__item">
+            <a href="#" class="card__link">
+              <div class="card__img-container">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/index/lamp@1x.webp 1x,
+                      img/index/lamp@2x.webp 2x
+                    "
+                  />
+                  <!-- 1х: 230px; 2x: 460px -->
+                  <img
+                    class="card__img"
+                    src="img/index/lamp@1x.jpg"
+                    srcset="img/index/lamp@2x.jpg 2x"
+                    width="171px"
+                    height="201px"
+                    alt="Лампа накаливания"
+                  />
+                </picture>
+              </div>
+              <div class="card__title-container">
+                <h3 class="card__title">
+                  Ширина 205/80 R16 104Q Misha RF Power Grum
+                </h3>
+                <b class="card__price card__price--out">11 680 ₽</b>
+              </div>
+
+              <div class="card__btn-container">
+                <button
+                  class="card__favourite"
+                  aria-label="Добавить в избранное"
+                >
+                  <svg
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.36656 1C3.47849 1 0.392496 4.56658 1.10209 9.68573C1.71793 14.1286 12.3223 23 13.5 23C14.6777 23 25.2821 14.1286 25.8979 9.68573C26.6075 4.56647 23.5215 1 19.6334 1C17.0414 1 15.0222 2.0898 13.5 4.26939C11.9778 2.0898 9.9586 1 7.36656 1Z"
+                      stroke="black"
+                      stroke-opacity="0.3"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+
+                <a
+                  href="#"
+                  class="card__buy visually-hidden"
+                  aria-label="Добавить в корзину"
+                  type="button"
+                  ><svg
+                    width="22"
+                    height="26"
+                    viewBox="0 0 22 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 6.53846V25H21V6.53846H1ZM5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846"
+                      fill="#FF7931"
+                    />
+                    <path
+                      d="M5.54545 6.53846C5.54545 6.53846 5.54545 1 11 1C16.4545 1 16.4545 6.53846 16.4545 6.53846M1 6.53846V25H21V6.53846H1Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="card__notify-me">Сообщить о поступлении</a>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <button
+          class="slider-popular__button slider-popular__control-forward back-forward-btn back-forward-btn--slider-goods"
+          type="button"
+          aria-label="Вперед"
+        ></button>
+        <button
+          class="slider-popular__button slider-popular__control-back back-forward-btn back-forward-btn--slider-goods"
+          type="button"
+          aria-label=""
+        ></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+		<footer class="footer-site">
+  <div class="footer-container">
+    <!-- ! Email -->
+    <div class="email">
+      <h2 class="email__title">
+        Подпишитесь на нашу рассылку и узнавайте об акция быстрее
+      </h2>
+      <form class="email__form" method="POST" action="#">
+        <label class="visually-hidden" for="subscribe-input"
+          >Введите vin-код</label
+        >
+        <input
+          type="email"
+          placeholder="Электронная почта"
+          id="subscribe-me"
+          name="subscribe-input"
+          required=""
+          class="email__input"
+        />
+        <button class="cta-button email__button" type="submit">
+          <span class="subscribe-form__button">Подписаться</span>
+        </button>
+      </form>
+      <p class="email__copy-text">Интернет-магазин автозапчастей</p>
+    </div>
+
+    <!-- ! Footer menu -->
+    <div class="footer-menu-container">
+      <!-- 1 -->
+      <div class="footer-menu">
+        <b class="footer-menu__title">Информация</b>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Компания</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Контакты</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Реквизиты</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Магазины</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--2 -->
+      <div class="footer-menu">
+        <b class="footer-menu__title">Сервисный центр</b>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Доставка</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Способы оплаты</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Бренды</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Гарантия</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 3 -->
+      <div class="footer-menu two-columns">
+        <b class="footer-menu__title">Интернет-магазин</b>
+        <div class="two-columns-container">
+          <ul class="footer-menu__list two-columns-space">
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">График доставки</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Бренды</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Возврат</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Магазины</a>
+            </li>
+          </ul>
+
+          <ul class="footer-menu__list two-columns-space">
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Доставка</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Способы оплаты</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Акции</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">Точки выдачи</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- end -->
+    </div>
+  </div>
+</footer>
+
+	<svg class="svg-_magnifying-glass-dims">
+							<use xlink:href="img/iconsprite/icons.svg#_magnifying-glass"/>
+	</svg>
+	</main>
+  </body>
+</html>
