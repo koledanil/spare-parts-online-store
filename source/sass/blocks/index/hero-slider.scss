@@ -7,9 +7,7 @@
 .promo-container {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  width: 1170px;
-  display: flex;
-  margin: auto;
+  @include flex1170;
 
   justify-content: space-between;
 }
@@ -301,5 +299,11 @@
   &__seconds-digits,
   &__seconds-text {
     padding-right: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .promo-container {
+    display: none;
   }
 }

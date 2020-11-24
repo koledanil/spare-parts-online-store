@@ -9,6 +9,10 @@
   flex-wrap: wrap;
 }
 
+.bobs-burger-menu {
+  display: none;
+}
+
 .fav-menu {
   list-style: none;
   margin: 0px 0px 0px 0px;
@@ -129,5 +133,70 @@
 
   & &__item--active {
     font-weight: bold;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu-container {
+    margin-bottom: 0px;
+  }
+
+  .nav-container {
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+
+  .bobs-burger-menu {
+    padding-left: 16px;
+    box-sizing: border-box;
+    display: block;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    align-self: center;
+  }
+
+  .fav-menu {
+    display: none;
+  }
+
+  .store-logo {
+    width: auto;
+    min-height: 72px;
+    margin-left: 16px;
+
+    &__img {
+      height: 40px;
+    }
+  }
+
+  .nav-address {
+    display: none;
+  }
+
+  .service-menu {
+    margin-right: 16px;
+    width: auto;
+    margin-left: auto;
+
+    &__item {
+      margin-left: 8px;
+    }
+  }
+
+  .nav-menu {
+    overflow: auto;
+    white-space: nowrap;
+    min-height: 56px;
+
+    border-bottom: non;
+    &__item--active {
+      &::after {
+        content: "";
+        bottom: -8px;
+      }
+    }
   }
 }

@@ -5,6 +5,14 @@
   @include fontBody;
 }
 
+// turn off ios style
+input[type="search"],
+input[type="text"],
+input[type="submit"],
+textarea {
+  -webkit-appearance: none;
+}
+
 a:hover,
 input:hover,
 button:hover {
