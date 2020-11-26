@@ -37,3 +37,18 @@
   top: 0px;
   right: -72px;
 }
+
+@media (max-width: 768px) {
+  .popular-goods-container {
+    width: 100%;
+  }
+
+  .slider-popular__button {
+    display: none;
+  }
+
+  .slider-popular__control-back,
+  .slider-popular__control-forward {
+    display: none;
+  }
+}

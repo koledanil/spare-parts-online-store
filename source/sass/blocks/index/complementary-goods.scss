@@ -1,21 +1,18 @@
-.complementary-container {
+.compl-container {
   margin-top: 80px;
   margin-bottom: 80px;
 }
 
-.complementary-goods-container {
+.compl-goods-container {
   @include flex1170;
+
   justify-content: space-between;
   position: relative;
 }
 
-.complementary-goods {
+.compl-goods {
   @include resetMarginPadding;
   width: 100%;
-
-  &--title-without-link-right {
-    width: 500px;
-  }
 }
 
 .card-container {
@@ -40,4 +37,36 @@
 .slider-popular__control-forward {
   top: 0px;
   right: -72px;
+}
+
+.no-more-link {
+  display: none;
+}
+
+.tab--right-aligned {
+  margin-left: auto;
+}
+.asa {
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .popular-goods-container {
+    width: 100%;
+  }
+
+  .slider-popular__button {
+    display: none;
+  }
+
+  .slider-popular__control-back,
+  .slider-popular__control-forward {
+    display: none;
+  }
+}
+
+@media (width: 768px) {
+  .tab--right-aligned {
+    margin-left: 0px;
+  }
 }

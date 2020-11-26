@@ -116,11 +116,11 @@ a {
     padding-right: 16px;
 
     &:nth-child(1) {
-      padding-left: 0px;
+      padding-left: 16px;
     }
 
     &:last-child {
-      padding-right: 0px;
+      padding-right: 16px;
       text-align: right;
     }
 
@@ -156,6 +156,55 @@ a {
     @include resetMarginPadding;
     margin-bottom: 0px;
     width: 320px;
+  }
+}
+
+.tab-title--mobile {
+  display: none;
+}
+
+.tab-title--others {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .tab-title--mobile {
+    display: block;
+  }
+
+  .tab-title--others {
+    display: none;
+  }
+
+  .tab {
+    padding-top: 10px;
+    overflow: auto;
+    justify-content: flex-start;
+    white-space: nowrap;
+
+    // justify-content: center;
+
+    &__item {
+      @include resetMarginPadding;
+      padding-right: 8px;
+      padding-left: 8px;
+
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &__link--active {
+      &::after {
+        bottom: -12px;
+      }
+    }
+
+    &__title {
+      width: 100%;
+      font-size: 18px;
+      font-weight: bold;
+    }
   }
 }
 
@@ -276,6 +325,25 @@ a {
     border: none;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    overflow: auto;
+
+    &__item {
+      box-sizing: border-box;
+      margin-left: 16px;
+      &:last-child::after {
+        content: "";
+        width: 16px;
+        height: 1px;
+        position: absolute;
+        left: 100%;
+        top: 0px;
+      }
+    }
   }
 }
 

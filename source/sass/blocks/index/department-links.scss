@@ -12,6 +12,7 @@
 
   &__item {
     position: relative;
+    width: 370px;
     margin-bottom: 32px;
     &:nth-last-child(-n + 3) {
       margin-bottom: 0px;
@@ -21,7 +22,7 @@
   &__link {
     @include resetMarginPadding;
     display: block;
-    width: 370px;
+    width: 100%;
     border: 1px solid $grey25;
     border-radius: $borderRadiusElement;
     padding: 24px;
@@ -57,75 +58,118 @@
     @include resetMarginPadding;
   }
 
-  &__icon--chemistry {
-    @include resetMarginPadding;
+  &__icon--chemistry,
+  &__icon--tires,
+  &__icon--tools,
+  &__icon--spares,
+  &__icon--electro,
+  &__icon--accessories {
     position: absolute;
-    right: 24px;
-    top: 20px;
     display: block;
     width: 100px;
     height: 100px;
-    background-image: url("../img/index/department/chemistry.svg");
+    right: 16px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-size: 100%;
+    background-position: center right 0px;
     background-repeat: no-repeat;
+  }
+
+  &__icon--chemistry {
+    background-image: url("../img/index/department/chemistry.svg");
   }
 
   &__icon--tires {
-    @include resetMarginPadding;
-    position: absolute;
-    right: 24px;
-    top: 20px;
-    display: block;
-    width: 100px;
-    height: 100px;
     background-image: url("../img/index/department/wheels.svg");
-    background-repeat: no-repeat;
   }
 
   &__icon--tools {
-    @include resetMarginPadding;
-    position: absolute;
-    right: 24px;
-    top: 20px;
-    display: block;
-    width: 100px;
-    height: 100px;
     background-image: url("../img/index/department/tools.svg");
-    background-repeat: no-repeat;
   }
 
   &__icon--spares {
-    @include resetMarginPadding;
-    position: absolute;
-    right: 24px;
-    top: 20px;
-    display: block;
-    width: 100px;
-    height: 100px;
     background-image: url("../img/index/department/spare.svg");
-    background-repeat: no-repeat;
   }
 
   &__icon--electro {
-    @include resetMarginPadding;
-    position: absolute;
-    right: 24px;
-    top: 20px;
-    display: block;
-    width: 100px;
-    height: 100px;
     background-image: url("../img/index/department/electricity.svg");
-    background-repeat: no-repeat;
   }
 
   &__icon--accessories {
-    @include resetMarginPadding;
-    position: absolute;
-    right: 24px;
-    top: 20px;
-    display: block;
-    width: 100px;
-    height: 100px;
     background-image: url("../img/index/department/others.svg");
-    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 320px) {
+  .departments {
+    &__icon--chemistry,
+    &__icon--tires,
+    &__icon--tools,
+    &__icon--spares,
+    &__icon--electro,
+    &__icon--accessories {
+      right: 16px;
+      top: 0;
+      bottom: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      background-size: 72%;
+      background-position: center right 0px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .departments-container {
+    width: 100%;
+  }
+
+  .departments {
+    &__list {
+      box-sizing: border-box;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+
+    &__item {
+      @include resetMarginPadding;
+      width: 100%;
+      margin-bottom: 12px;
+      &:nth-last-child(-n + 3) {
+        margin-bottom: 12px;
+      }
+    }
+
+    &__link {
+      padding: 16px;
+    }
+
+    &__name {
+      margin-bottom: 24px;
+      font-size: 18px;
+    }
+
+    &__icon--chemistry,
+    &__icon--tires,
+    &__icon--tools,
+    &__icon--spares,
+    &__icon--electro,
+    &__icon--accessories {
+      position: absolute;
+      display: block;
+      width: 100px;
+      height: 100px;
+      right: 16px;
+      top: 0;
+      bottom: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      background-size: 80%;
+      background-position: center right 0px;
+      background-repeat: no-repeat;
+    }
   }
 }
