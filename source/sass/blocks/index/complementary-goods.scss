@@ -1,6 +1,6 @@
 .compl-container {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: $marginSectionDesk;
+  margin-bottom: $marginSectionDesk;
 }
 
 .compl-goods-container {
@@ -51,6 +51,11 @@
 }
 
 @media (max-width: 768px) {
+  .compl-container {
+    margin-top: $marginSectionMob;
+    margin-bottom: $marginSectionMob;
+  }
+
   .popular-goods-container {
     width: 100%;
   }

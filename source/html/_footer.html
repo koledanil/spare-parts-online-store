@@ -2,34 +2,48 @@
   <div class="footer-container">
     <!-- ! Email -->
     <div class="email">
-      <h2 class="email__title">
-        Подпишитесь на нашу рассылку и узнавайте об акция быстрее
-      </h2>
+      <h2 class="email__title">Рассылка</h2>
+      <p class="email__title-text">
+        Раз в неделю рассказываем о новстях из мира автомобилей, скидках и
+        специальных предложениях
+      </p>
       <form class="email__form" method="POST" action="#">
         <label class="visually-hidden" for="subscribe-input"
-          >Введите vin-код</label
+          >Электронная почта</label
         >
         <input
           type="email"
-          placeholder="Электронная почта"
+          placeholder="Почта"
           id="subscribe-me"
           name="subscribe-input"
           required=""
           class="email__input"
         />
         <button class="cta-button email__button" type="submit">
-          <span class="subscribe-form__button">Подписаться</span>
+          <span class="email__button-txt">Подписаться</span>
+
+          <svg
+            width="24"
+            height="24"
+            class="icon-sprite email__button-icon-svg"
+          >
+            <use xlink:href="img/iconsprite/icons.svg#_subscribe"></use>
+          </svg>
         </button>
       </form>
-      <p class="email__copy-text">Интернет-магазин автозапчастей</p>
     </div>
-
     <!-- ! Footer menu -->
     <div class="footer-menu-container">
-      <!-- 1 -->
       <div class="footer-menu">
-        <b class="footer-menu__title">Информация</b>
-        <ul class="footer-menu__list">
+        <div class="footer-menu__title-container">
+          <b class="footer-menu__title">Информация</b>
+          <button class="footer-menu__title-more-icn">
+            <svg class="icon-sprite footer-more-icon--small">
+              <use xlink:href="img/iconsprite/icons.svg#_moreBtn"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="footer-menu__list visually-hidden">
           <li class="footer-menu__item">
             <a href="#" class="footer-menu__link">Компания</a>
           </li>
@@ -45,10 +59,16 @@
         </ul>
       </div>
 
-      <!--2 -->
       <div class="footer-menu">
-        <b class="footer-menu__title">Сервисный центр</b>
-        <ul class="footer-menu__list">
+        <div class="footer-menu__title-container">
+          <b class="footer-menu__title">Сервисный центр</b>
+          <button class="footer-menu__title-more-icn">
+            <svg class="icon-sprite footer-more-icon--small">
+              <use xlink:href="img/iconsprite/icons.svg#_moreBtn"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="footer-menu__list visually-hidden">
           <li class="footer-menu__item">
             <a href="#" class="footer-menu__link">Доставка</a>
           </li>
@@ -64,13 +84,19 @@
         </ul>
       </div>
 
-      <!-- 3 -->
       <div class="footer-menu two-columns">
-        <b class="footer-menu__title">Интернет-магазин</b>
-        <div class="two-columns-container">
+        <div class="footer-menu__title-container footer-last-menu">
+          <b class="footer-menu__title">Интернет-магазин</b>
+          <button class="footer-menu__title-more-icn">
+            <svg class="icon-sprite footer-more-icon--small">
+              <use xlink:href="img/iconsprite/icons.svg#_moreBtn"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="two-columns-container visually-hidden">
           <ul class="footer-menu__list two-columns-space">
             <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">График доставки</a>
+              <a href="#" class="footer-menu__link">Доставка</a>
             </li>
             <li class="footer-menu__item">
               <a href="#" class="footer-menu__link">Бренды</a>
@@ -85,7 +111,7 @@
 
           <ul class="footer-menu__list two-columns-space">
             <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Доставка</a>
+              <a href="#" class="footer-menu__link">О нас</a>
             </li>
             <li class="footer-menu__item">
               <a href="#" class="footer-menu__link">Способы оплаты</a>
@@ -99,8 +125,7 @@
           </ul>
         </div>
       </div>
-
-      <!-- end -->
     </div>
+    <p class="footer-menu__copy-text">© Интернет-магазин «Колесо™» 2001–2020</p>
   </div>
 </footer>

@@ -1,6 +1,6 @@
 .popular-container {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: $marginSectionDesk;
+  margin-bottom: $marginSectionDesk;
 }
 
 .popular-goods-container {
@@ -39,6 +39,11 @@
 }
 
 @media (max-width: 768px) {
+  .popular-container {
+    margin-top: $marginSectionMob;
+    margin-bottom: $marginSectionMob;
+  }
+
   .popular-goods-container {
     width: 100%;
   }

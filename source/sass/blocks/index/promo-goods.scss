@@ -1,7 +1,7 @@
 .promo-banner {
   @include resetMarginPadding;
   @include flex1170;
-  margin-bottom: 80px;
+  margin-bottom: $marginSectionDesk;
 }
 
 .banner {
@@ -9,5 +9,19 @@
   &__img {
     @include resetMarginPadding;
     border-radius: $borderRadiusBlock;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-banner {
+    width: 100%;
+    height: 206px;
+    background-color: royalblue;
+    margin-bottom: $marginSectionMob;
+  }
+  .banner {
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
   }
 }

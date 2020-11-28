@@ -44,7 +44,8 @@
 
   &__button {
     position: absolute;
-    top: 6px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 6px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -53,11 +54,8 @@
     padding-right: 12px;
   }
 
-  &__copy-text {
-    @include resetMarginPadding;
-    margin-top: 32px;
-    font-size: 14px;
-    color: $grey75;
+  &__button-icon-svg {
+    display: none;
   }
 }
 
@@ -84,6 +82,10 @@
   &__link {
     @include textLinkReset;
   }
+
+  &__title-more-icn {
+    display: none;
+  }
 }
 
 .two-columns {
@@ -98,4 +100,161 @@
 }
 .two-columns-container {
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    width: 100%;
+    justify-content: center;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .email {
+    width: 100%;
+    padding-right: 0px;
+    padding-right: 16px;
+    padding-left: 16px;
+
+    margin-bottom: 42px;
+
+    &__title {
+      @include resetMarginPadding;
+      text-align: left;
+      font-size: 22px;
+      line-height: 24px;
+      padding-right: 0px;
+      margin-bottom: 12px;
+    }
+
+    &__title-text {
+      @include resetMarginPadding;
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 16px;
+    }
+
+    &__input {
+      padding-right: 0px;
+      font-size: 16px;
+      padding-left: 16px;
+      height: 56px;
+    }
+
+    &__button {
+      font-size: 16px;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+    }
+
+    &__button-txt {
+      display: none;
+    }
+
+    &__button-icon-svg {
+      display: block;
+      padding: 0px;
+      margin: 0px;
+      width: 24px;
+      height: 24px;
+      fill: white;
+    }
+  }
+
+  .footer-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-menu {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+
+    &__list {
+      @include resetMarginPadding;
+    }
+
+    &__title-more-icn {
+      display: block;
+    }
+
+    &__title-container {
+      @include resetMarginPadding;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    &__title-more-icn {
+      @include resetMarginPadding;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-top: 1px solid $grey25;
+    }
+
+    &__title {
+      @include resetMarginPadding;
+      text-align: center;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    &__item {
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__link {
+      display: block;
+      width: 100%;
+      font-size: 16px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    &__copy-text {
+      @include resetMarginPadding;
+      margin-top: 32px;
+      font-size: 14px;
+      color: $grey75;
+      padding-left: 16px;
+      width: 100%;
+    }
+  }
+
+  .two-columns {
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    &-space {
+      width: 100%;
+      margin: 0px;
+    }
+  }
+  .footer-last-menu {
+    border-bottom: 1px solid $grey25;
+  }
+
+  .footer-more-icon--small {
+    width: 24px;
+  }
 }
