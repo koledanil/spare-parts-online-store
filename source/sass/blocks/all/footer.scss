@@ -19,8 +19,14 @@
     display: block;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     padding-right: 88px;
+  }
+
+  &__title-text {
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   &__form {
@@ -86,6 +92,13 @@
   &__title-more-icn {
     display: none;
   }
+
+  &__copy-text {
+    margin-top: 0px;
+    margin-top: 24px;
+    font-size: 14px;
+    color: $grey75;
+  }
 }
 
 .two-columns {
@@ -95,7 +108,7 @@
   flex-wrap: wrap;
 
   &-space {
-    margin-right: 32px;
+    margin-right: 48px;
   }
 }
 .two-columns-container {
@@ -178,6 +191,7 @@
     width: 100%;
 
     &__list {
+      display: none;
       @include resetMarginPadding;
     }
 

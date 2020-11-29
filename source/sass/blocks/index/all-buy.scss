@@ -1,16 +1,16 @@
-.compl-container {
+.all-buy-container {
   margin-top: $marginSectionDesk;
   margin-bottom: $marginSectionDesk;
 }
 
-.compl-goods-container {
+.all-buy-goods-container {
   @include flex1170;
 
   justify-content: space-between;
   position: relative;
 }
 
-.compl-goods {
+.all-buy-goods {
   @include resetMarginPadding;
   width: 100%;
 }
@@ -39,18 +39,21 @@
   right: -72px;
 }
 
-.no-more-link {
-  display: none;
-}
-
 .tab--right-aligned {
   margin-left: auto;
 }
-.asa {
-  justify-content: flex-start;
+
+.all-container {
+  @include flex1170;
+  justify-content: space-between;
+  position: relative;
 }
 
 @media (max-width: 768px) {
+  .all-container {
+    width: 100%;
+  }
+
   .compl-container {
     margin-top: $marginSectionMob;
     margin-bottom: $marginSectionMob;
@@ -66,6 +69,10 @@
 
   .slider-popular__control-back,
   .slider-popular__control-forward {
+    display: none;
+  }
+
+  .no-more-link {
     display: none;
   }
 }
