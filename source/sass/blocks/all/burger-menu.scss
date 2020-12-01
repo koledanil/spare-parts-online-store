@@ -1,0 +1,152 @@
+.modal-bg {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .modal-bg {
+    display: block;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#fff, 0.88);
+    z-index: 2;
+  }
+
+  .menu-container {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.42);
+    overflow-y: scroll;
+  }
+
+  .close-burger-menu {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 14px;
+    margin-right: 11px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+  }
+
+  .burger-menu-close-btn {
+    width: 24px;
+    height: 24px;
+    fill: $grey100;
+  }
+
+  .burger-menu {
+    @include resetMarginPadding;
+  }
+
+  .burger-service {
+    @include resetMarginPadding;
+    list-style-type: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    width: 100%;
+
+    &__link {
+      width: 100%;
+      display: block;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-decoration: none;
+      color: $grey100;
+    }
+  }
+
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    // background-color: $grey100;
+
+    &--item-style {
+      @include resetMarginPadding;
+      width: 48%;
+      height: 80px;
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-end;
+      // background-color: $grey0;
+      border-right: 1px solid rgba($grey25, 0.64);
+      border-bottom: 1px solid rgba($grey25, 0.64);
+    }
+
+    &--item-style:nth-child(2n) {
+      margin-right: 0px;
+      border-right: none;
+    }
+    &--item-style:nth-last-child(2) + li,
+    &--item-style:nth-last-child(2) {
+      border-bottom: none;
+    }
+
+    &--link-style {
+      @include resetMarginPadding;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+    }
+
+    &--icon-style {
+      @include resetMarginPadding;
+      width: 28px;
+      height: 28px;
+      padding-bottom: 4px;
+      fill: $grey75;
+      // background-color: $orangeB;
+    }
+  }
+
+  .search-burger-container {
+    background-color: $grey0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      bottom: auto;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.7415 19.3951L16.5507 14.9395C17.6283 13.6301 18.2186 11.9826 18.2186 10.2675C18.2186 6.26026 15.0293 3 11.1093 3C7.1893 3 4 6.26026 4 10.2675C4 14.2747 7.1893 17.535 11.1093 17.535C12.581 17.535 13.9833 17.0812 15.1823 16.2199L19.405 20.7093C19.5815 20.8967 19.8189 21 20.0732 21C20.314 21 20.5425 20.9062 20.7159 20.7355C21.0843 20.3731 21.0961 19.7721 20.7415 19.3951ZM11.1093 4.89587C14.0068 4.89587 16.364 7.30552 16.364 10.2675C16.364 13.2295 14.0068 15.6391 11.1093 15.6391C8.21181 15.6391 5.85461 13.2295 5.85461 10.2675C5.85461 7.30552 8.21181 4.89587 11.1093 4.89587Z' fill='%23A8A8A8'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+
+  input.search-burger__input {
+    font-size: 16px;
+    border: none;
+    line-height: 40px;
+    width: 100%;
+    border: 1px solid $grey25;
+    border-radius: $borderRadiusElement;
+    padding-left: 32px;
+    padding-right: 8px;
+  }
+}

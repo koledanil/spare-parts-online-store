@@ -61,11 +61,16 @@
   line-height: 20px;
 
   &__link {
-    padding-left: 16px;
+    padding-left: 8px;
     font-size: 14px;
     text-decoration: none;
     color: $grey100;
   }
+}
+
+.icon-menu-small {
+  width: 24px;
+  fill: $grey100;
 }
 
 .service-menu {
