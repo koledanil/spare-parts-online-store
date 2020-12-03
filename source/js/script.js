@@ -1,6 +1,21 @@
-"use strict"
+"use strict";
 
-// это не ошибка, просто надо доабвить include в stylelint
-// в билде появится одни файл, который будет создан на базе этих двух. В консоль будет выведено 2 значения
-@@include('first.js')
-@@include('second.js')
+const burgerMenuOpenBtn = document.querySelector(".bobs-burger-menu");
+const burgerMenu = document.querySelector(".modal-bg");
+const burgerMenuCloseBtn = document.querySelector(".close-burger-menu");
+
+const openMenuHandler = function () {
+  burgerMenu.classList.remove("visually-hidden");
+
+  burgerMenuCloseBtn.addEventListener("click", closeMenuHandler);
+  burgerMenu.addEventListener("click", closeMenuHandler);
+};
+
+const closeMenuHandler = function (evt) {
+  burgerMenu.classList.add("visually-hidden");
+
+  burgerMenuCloseBtn.removeEventListener("click", closeMenuHandler);
+  burgerMenu.removeEventListener("click", closeMenuHandler);
+};
+
+burgerMenuOpenBtn.addEventListener("click", openMenuHandler);

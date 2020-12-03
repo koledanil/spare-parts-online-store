@@ -70,6 +70,7 @@
 
 .icon-menu-small {
   width: 24px;
+  height: 24px;
   fill: $grey100;
 }
 
@@ -160,8 +161,8 @@
     background: none;
     border: none;
     align-self: center;
-    margin-right: 8px;
-    margin-left: 8px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   .fav-menu {
@@ -188,7 +189,8 @@
     margin-left: auto;
 
     &__item {
-      margin-left: 4px;
+      // background-color: $grey25;
+      margin-left: 8px;
     }
   }
 
