@@ -256,14 +256,17 @@ a {
   }
 
   &__img-container {
+    box-sizing: border-box;
     display: flex;
     width: 270px;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     height: 240px;
+    padding: 32px;
   }
 
   &__img {
+    max-width: 190px;
     display: block;
     @include resetMarginPadding;
   }
@@ -280,6 +283,9 @@ a {
   }
 
   &__title {
+    @include resetMarginPadding;
+    padding-top: 0px;
+    padding-bottom: 12px;
     font-size: 16px;
     line-height: 20px;
     font-weight: normal;
@@ -345,6 +351,12 @@ a {
 @media (max-width: 768px) {
   .card {
     overflow: auto;
+
+    &__img {
+      max-width: 170px;
+      display: block;
+      @include resetMarginPadding;
+    }
 
     &__item {
       box-sizing: border-box;

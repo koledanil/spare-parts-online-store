@@ -150,13 +150,13 @@
     &::after {
       content: "";
       position: absolute;
-      top: 34px;
+      top: 36px;
       left: 5px;
       display: block;
       background-color: $orangeB;
-      width: 50px;
+      width: 42px;
       height: 2px;
-      transform: rotate(-12deg);
+      transform: rotate(-24deg);
     }
   }
 }
@@ -190,28 +190,32 @@
 
 .offer-demonstration {
   @include resetMarginPadding;
-
   display: flex;
   height: 300px;
   flex-wrap: wrap;
-
   justify-content: center;
   align-items: flex-end;
-  padding: 16px;
   box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
 
   &__img {
     @include resetMarginPadding;
-    width: 150px;
+    display: block;
+    max-height: 200px;
+    max-width: 200px;
+    margin-bottom: -8px;
+    background-color: aqua;
   }
 
   &__title {
     @include resetMarginPadding;
     display: inline-block;
-    line-height: 20px;
     text-align: center;
     font-weight: normal;
     font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -306,12 +310,13 @@
 
 @media (max-width: 320px) {
   .offer-demonstration {
+    padding-top: 40px;
     flex-wrap: wrap;
+    justify-content: center;
 
     &__img {
       display: flex;
-      justify-content: center;
-      width: 100%;
+      width: 300px;
       margin-right: 0px;
       position: relative;
     }
@@ -326,7 +331,8 @@
       padding-right: 16px;
       box-sizing: border-box;
 
-      font-size: 14px;
+      font-size: 16px;
+      line-height: 24px;
       text-align: center;
     }
   }
@@ -350,6 +356,7 @@
     background-color: $grey25;
 
     &__img {
+      display: block;
       display: none;
     }
   }
@@ -429,10 +436,15 @@
     padding: 16px;
     box-sizing: border-box;
 
-    &__img {
-      @include resetMarginPadding;
+    &__container-img {
+      display: flex;
       margin-right: 16px;
-      width: 50%;
+      width: 200px;
+    }
+
+    &__img {
+      display: block;
+      max-width: 100%;
     }
 
     &__title {
@@ -441,7 +453,7 @@
       width: 100%;
       padding-top: 0px;
       text-align: left;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 22px;
     }
 
